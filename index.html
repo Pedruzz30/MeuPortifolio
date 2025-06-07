@@ -4,6 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Portfólio de Pedro Henrique - Software Engineer especializado em Back-End, Java e SQL">
+  <meta name="keywords" content="Java Developer, Back-End Engineer, SQL Specialist, Pedro Henrique Portfolio">
+  <meta property="og:title" content="Pedro Henrique | Back-End Specialist">
+  <meta property="og:description" content="Portfólio de Pedro Henrique - Software Engineer especializado em Back-End, Java e SQL">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://seusite.com">
+  <meta property="og:image" content="https://seusite.com/assets/preview.jpg">
+  
   <title>Portfólio | Pedro Henrique</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
@@ -16,11 +23,14 @@
         <nav>
             <div class="logo-container">
                 <a href="#home" class="logo">
-                    <span class="logo-icon">PH</span>
+                    <span class="logo-icon"><i class ="fas fa-server"></i></span>
                     <span class="logo-text">Pedro Henrique</span>
                     <span class="logo-subtext">Dev</span>
                 </a>
             </div>
+            <button class="nav-toggle" aria-label="abrir menu">
+                <i class="fas fa-bars"></i>
+            </button>
             <ul class = "navigation-menu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">Sobre</a></li>
@@ -32,23 +42,34 @@
 
     <main>
         <section id="home" class="section home-section">
-            <div class="container">
-                <div class="title-container">
-                    <h1 id="dynamic-title">
-                        <span id="greeting">Olá, Mundo!</span>
-                        <span id="name" class="highlight">Pedro Henrique!</span>
-                    </h1>
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 id="dynamic-title">
+                    <span id="greeting">Olá, Mundo!</span>
+                    <span id="name" class="highlight">Pedro Henrique!</span>
+                </h1>
+                <p class="hero-subtitle">Software Engineer | Back-End Specialist</p>
+                <p class="hero-description">Construindo sistemas robustos e escaláveis com Java, Spring Boot e arquiteturas distribuídas</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+                    <a href="#contact" class="btn btn-secondary">Contato</a>
                 </div>
-                <p>Software Engineer | Back-End | Java | SQL</p>
-                <div class="social-links">
-                    <a href="https://github.com/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="hero-image">
+                <div class="code-snippet">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="social-links">
+           <a href="https://github.com/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
                     <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     <a href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                     <a href="mailto:seuemail@exemplo.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                </div>
-                <a href="#projects" class="btn">Meus Projetos</a>
-            </div>
-        </section>
+        </div>
+    </div>
+</section>
 
         <section id="about" class="section about-section">
             <div class="container">
