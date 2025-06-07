@@ -59,6 +59,19 @@ nav {
     padding: 0 20px;
 }
 
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--text-light);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.nav-toggle.open {
+    color: var(--primary-color);
+}
+
 .logo-container {
     display: flex;
     align-items: center;
@@ -197,7 +210,7 @@ nav ul li a:hover {
     color: #333;
     font-weight: 500;
     background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: bluar(5px);
+    backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -808,22 +821,39 @@ footer p {
     .section {
         padding: 80px 15px;
     }
-    
+
     nav {
         flex-direction: column;
         gap: 20px;
+        position: relative;
     }
-    
+
+    .nav-toggle {
+        display: block;
+    }
+
     .home-section h1 {
         font-size: 2.5rem;
     }
-    
-    nav ul {
+
+    .navigation-menu {
+        display: none;
+        flex-direction: column;
         gap: 1rem;
-        flex-wrap: wrap;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--bg-darker);
+        padding: 15px 0;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .navigation-menu.open {
+        display: flex;
         justify-content: center;
     }
-    
+
     .projects-section h2,
     .about-section h2,
     .contact-section h2 {
