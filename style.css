@@ -62,7 +62,7 @@ nav {
 .logo-container {
     display: flex;
     align-items: center;
-    transition: all 0.03 ease;
+    transition: all 0.3s ease;
 }
 
 .logo {
@@ -130,7 +130,7 @@ nav {
 
 .logo-text {
     font-weight: 600;
-    font-size: 1,3rem;
+    font-size: 1.3rem;
     letter-spacing: 0.5px;
     background: linear-gradient(to right, #333, #555);
     -webkit-background-clip: text;
@@ -179,7 +179,7 @@ nav ul li a:hover {
 
 .navigation-menu {
     display: flex;
-    gap: 0.5;
+    gap: 0.5rem;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -197,7 +197,7 @@ nav ul li a:hover {
     color: #333;
     font-weight: 500;
     background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: bluar(5px);
+    backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -259,13 +259,13 @@ nav ul li a:hover {
     width: 200%;
     height: 200%;
     background: radial-gradient(circle, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 70%);
-    animation: pilseGlow 3s infinite;
+    animation: pulseGlow 3s infinite;
     opacity: 0.5;
 }
 
 @keyframes pulseGlow {
     0%, 100% {
-        opaity: 0.5;
+        opacity: 0.5;
     }
     50% {
         opacity: 0.8;
@@ -389,10 +389,10 @@ nav ul li a:hover {
     border-radius: 20px;
     transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     animation: float 4s ease-in-out infinite;
-    will-change: transform, bax-shadow;
+    will-change: transform, box-shadow;
     filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.1));
     border: 2px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: brightness(1.05)
+    backdrop-filter: brightness(1.05);
 }
 
 .profile-img:hover {
