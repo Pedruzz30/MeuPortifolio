@@ -4,6 +4,26 @@ gsap.registerPlugin(ScrollTrigger);
 // Active nav link
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('.nav-link');
+const navToggle = document.querySelector('.nav-toggle');
+const navigationMenu = document.querySelector('.navigation-menu');
+
+navToggle.addEventListener('click', () => {
+    navigationMenu.classList.toggle('open');
+    navToggle.classList.toggle('open');
+    const icon = navToggle.querySelector('i');
+    icon.classList.toggle('fa-bars');
+    icon.classList.toggle('fa-times');
+});
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navigationMenu.classList.remove('open');
+        navToggle.classList.remove('open');
+        const icon = navToggle.querySelector('i');
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+    });
+});
 
 window.addEventListener('scroll', () => {
     let current = '';
